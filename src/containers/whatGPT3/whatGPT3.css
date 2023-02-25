@@ -1,0 +1,81 @@
+.gpt3__whatgpt3 {
+  background-image: radial-gradient(
+    circle farthest-corner at 92.7% 12.7%,
+    rgb(78, 0, 173) 8.3%,
+    rgba(15, 51, 92, 1) 79.4%
+  );
+
+  padding: 5%;
+  box-shadow: 12px 12px 30px rgba(0, 0, 0, 0.45);
+}
+
+.gpt3__whatgpt3-feature {
+  display: flex;
+  flex-direction: row;
+}
+
+.gpt3__whatgpt3-feature .gpt3__features-container__feature {
+  margin: 0rem;
+}
+.gpt3__whatgpt3-feature .gpt3__features-container__feature-text {
+  max-width: 700px;
+}
+
+.gpt3__whatgpt3-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin: 4rem 0 2rem;
+}
+
+.gpt3__whatgpt3-feature h1 {
+  margin-top: 1rem;
+  font-size: 30px;
+}
+.gpt3__whatgpt3-feature .gpt3__features-container__feature-title > div {
+  width: 100px;
+  height: 5px;
+}
+
+.gpt3__whatgpt3-heading h1 {
+  font-family: "Manrope";
+
+  font-weight: 800;
+  font-size: 34px;
+  line-height: 45px;
+
+  max-width: 510px;
+
+  background: var(--gradient-text);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.gpt3__whatgpt3-heading p {
+  font-family: "Manrope";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  color: var(--color-subtext);
+}
+.gpt3__whatgpt3-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-top: 3rem;
+}
+.gpt3__whatgpt3-container .gpt3__features-container__feature {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  display: unset;
+  margin: 0;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+}
+
+.gpt3__whatgpt3-container .gpt3__features-container__feature-text {
+  margin-top: 1.2rem;
+  width: 80%;
+}

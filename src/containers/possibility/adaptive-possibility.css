@@ -1,0 +1,5 @@
+@media screen and (max-width: 1180px) {
+  .gpt3__possibility {
+    flex-direction: column;
+  }
+}

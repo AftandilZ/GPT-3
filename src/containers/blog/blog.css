@@ -1,0 +1,103 @@
+.gpt3__blog {
+  display: flex;
+  flex-direction: column;
+}
+
+.gpt3__blog-title > h1 {
+  font-size: 62px;
+  line-height: 75px;
+
+  letter-spacing: -0.04em;
+
+  margin-bottom: 1rem;
+}
+.gpt3__blog-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 5%;
+  /* gap: 5%; */
+}
+.gpt3__blog-content_groupA {
+  flex: 0.7;
+  width: 100%;
+}
+.gpt3__blog-content_groupA > div {
+  width: 90%;
+}
+
+.gpt3__blog-content_groupB {
+  flex: 1.2;
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, auto));
+  grid-template-rows: repeat(auto-fill, minmax(280px, auto));
+  flex-wrap: wrap;
+
+  gap: 2rem;
+}
+
+/* __________________________ [ ADAPRIVE ] ____________________________ */
+@media screen and (max-width: 1150px) {
+  .gpt3__blog-content {
+    display: grid;
+
+    /* grid-template-columns: repeat(auto-fill, minmax(auto, auto)); */
+  }
+  .gpt3__blog-content_groupA {
+    flex: 1;
+    margin-bottom: 5%;
+    display: flex;
+    justify-content: start;
+    /* background: var(--color-blog); */
+  }
+  .gpt3__blog-content_groupA > div {
+    width: 100%;
+  }
+  .gpt3__blog-content_groupA .gpt3__article-container {
+    flex-direction: row;
+  }
+  .gpt3__blog-content_groupB {
+    flex: 1;
+  }
+  .gpt3__blog-title > h1 {
+    font-size: 50px;
+    line-height: 65px;
+  }
+}
+
+@media screen and (max-width: 781px) {
+  .gpt3__blog-content_groupA .gpt3__article-container {
+    flex-direction: column;
+  }
+  .gpt3__blog-content_groupA {
+    margin-bottom: 2rem;
+  }
+  .gpt3__blog-title > h1 {
+    font-size: 42px;
+    line-height: 50px;
+  }
+
+  .gpt3__blog-content_groupB {
+    grid-template-rows: none;
+    /* margin-bottom: 5rem; */
+  }
+}
+
+@media screen and (max-width: 781px) {
+  .gpt3__blog-title > h1 {
+    font-size: 36px;
+    line-height: 44px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .gpt3__blog-content_groupB {
+    display: flex;
+    gap: 1rem;
+  }
+  .gpt3__blog-content {
+    display: block;
+  }
+}
